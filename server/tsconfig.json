@@ -1,0 +1,16 @@
+{
+  "compilerOptions": {
+    "target": "ES6", // Modern JavaScript
+    "module": "commonjs", // Node.js module system
+    "strict": true, // Enable strict type-checking
+    "esModuleInterop": true, // Compatibility with CommonJS
+    "outDir": "./dist", // Compiled JavaScript files
+    "rootDir": ".", // Source TypeScript files
+    "allowJs": true, // Optional: Include .js files
+    "resolveJsonModule": true, // Optional: If you import JSON files
+    "typeRoots": ["./node_modules/@types", "./types"], // Include custom types
+    "skipLibCheck": true // Skip type checking of library files
+  },
+  "include": ["./**/*.ts", "types"], // Include all .ts files and `types` folder
+  "exclude": ["node_modules", "dist"] // Exclude these folders
+}
